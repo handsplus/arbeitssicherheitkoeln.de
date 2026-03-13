@@ -1,0 +1,10 @@
+---
+description: Nach UI/Code-Änderungen Build automatisch ausführen, nicht nachfragen
+alwaysApply: true
+---
+
+# Build nach Änderungen
+
+- Nach Änderungen an Komponenten, Seiten, Styles oder Konfiguration, die die Anzeige betreffen, **sofort** `npm run build` im Projektordner ausführen.
+- **Nicht** fragen „Soll ich den Build ausführen?“ – direkt ausführen.
+- Der Nutzer erwartet, dass die Seite nach Änderungen direkt aktualisiert wird (Build durchführen).

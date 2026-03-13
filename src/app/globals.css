@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Corporate Design – Arbeitssicherheit Köln
+ * Schrift: Source Sans 3 (font-sans)
+ * Primärfarbe: Grün (primary-50 … primary-950), Akzent: Orange (accent)
+ * Überschriften: heading-section / heading-section-sub
+ * Buttons: btn-primary (Akzent), btn-secondary (Grün-Rahmen)
+ * Links: link-underline (primary, unterstrichen)
+ */
+
+:root {
+  --color-primary: 61 130 104;
+  --color-accent: 196 92 38;
+  --color-background: 255 255 255;
+  --color-foreground: 15 23 42;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply bg-white text-neutral-800 antialiased;
+  }
+  /* Focus visible für Barrierefreiheit */
+  :focus {
+    @apply outline-none;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-primary-500 ring-2 ring-primary-500/30;
+  }
+  /* Überschriften-Hierarchie */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight text-neutral-900;
+  }
+}
+
+@layer components {
+  .container-tight {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+  .section-padding {
+    @apply py-16 sm:py-20 lg:py-24;
+  }
+  .heading-section {
+    @apply text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl lg:text-[2.5rem];
+  }
+  .heading-section-sub {
+    @apply mt-4 text-lg text-neutral-600 max-w-2xl;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-xl bg-accent px-6 py-3.5 text-base font-semibold text-white shadow-md transition-colors hover:bg-accent-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent disabled:opacity-70;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-xl border-2 border-primary-600 bg-white px-6 py-3.5 text-base font-semibold text-primary-700 shadow-sm transition-colors hover:bg-primary-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500;
+  }
+  .link-underline {
+    @apply text-primary-600 underline decoration-2 underline-offset-4 hover:text-primary-700 focus-visible:rounded focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500;
+  }
+}
+
+/* Skip-Link für Barrierefreiheit (nur bei Fokus sichtbar, dezent) */
+.skip-link {
+  @apply absolute left-4 top-4 z-[100] -translate-y-full rounded-lg border-2 border-primary-600 bg-white px-4 py-2 text-sm font-medium text-primary-700 transition-transform focus:translate-y-0 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2;
+}
