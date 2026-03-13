@@ -8,7 +8,7 @@ export const siteConfig = {
   shortName: "AS Köln",
   /** Platzhalter: Bitte durch echte Domain ersetzen */
   url: "https://www.arbeitssicherheitkoeln.de",
-  companyName: "Health and Safety +",
+  companyName: "Arbeitssicherheit Köln",
   contactPerson: "Amin Korkae",
   phone: "0152 282 61619",
   email: "kontakt@handsplus.de",
