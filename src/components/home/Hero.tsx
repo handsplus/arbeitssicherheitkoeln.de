@@ -12,8 +12,8 @@ export function Hero() {
       <div className="container-tight relative z-10">
         <div className="mx-auto max-w-3xl text-center">
           <h1 id="hero-heading" className="text-4xl font-bold tracking-tight text-neutral-900 sm:text-5xl lg:text-6xl">
-            <span className="block">Arbeitssicherheit und Arbeitsschutz</span>
-            <span className="block text-primary-700">in Köln – Ihr Partner vor Ort</span>
+            Arbeitssicherheit und Arbeitsschutz{" "}
+            <span className="text-primary-700">in Köln – Ihr Partner vor Ort</span>
           </h1>
           <p className="mt-6 text-lg text-neutral-600 sm:text-xl">
             Externe Fachkraft für Arbeitssicherheit (SiFa): professionelle Arbeitsschutzbetreuung,

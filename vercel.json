@@ -1,4 +1,12 @@
 {
   "buildCommand": "npm run build",
-  "outputDirectory": "out"
+  "outputDirectory": "out",
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "arbeitssicherheitkoeln.de" }],
+      "destination": "https://www.arbeitssicherheitkoeln.de/:path*",
+      "permanent": true
+    }
+  ]
 }

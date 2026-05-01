@@ -4,6 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "node ./node_modules/next/dist/bin/next dev",
+    "dev:turbo": "node ./node_modules/next/dist/bin/next dev --turbo",
+    "clean": "node scripts/clean-next.cjs",
+    "dev:fresh": "node scripts/clean-next.cjs && node ./node_modules/next/dist/bin/next dev",
     "prebuild": "node ./node_modules/tsx/dist/cli.mjs scripts/generate-feed.ts",
     "build": "node scripts/run-export-build.cjs",
     "start": "node ./node_modules/next/dist/bin/next start",
