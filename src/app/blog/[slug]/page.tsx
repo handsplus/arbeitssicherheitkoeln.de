@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { blogPosts, getPostBySlug, getAllSlugs } from "@/data/blog";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { ArticleSchema } from "@/components/seo/ArticleSchema";
-import { siteConfig } from "@/config/site";
+import { canonicalUrl } from "@/config/site";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -24,9 +24,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: post.metaDescription,
       type: "article",
       publishedTime: post.date,
+      url: canonicalUrl(`/blog/${post.slug}`),
     },
     alternates: {
-      canonical: `${siteConfig.url}/blog/${post.slug}`,
+      canonical: canonicalUrl(`/blog/${post.slug}`),
     },
   };
 }

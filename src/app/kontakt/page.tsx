@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { ContactForm } from "@/components/contact/ContactForm";
-import { siteConfig } from "@/config/site";
-import { LocalBusinessSchema } from "@/components/seo/LocalBusinessSchema";
+import { canonicalUrl, siteConfig } from "@/config/site";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
+import { JsonLdWebPageSchema } from "@/components/seo/JsonLdWebPageSchema";
 
 export const metadata: Metadata = {
   title: "Kontakt – Arbeitssicherheit Köln",
@@ -11,14 +11,20 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Kontakt | Arbeitssicherheit Köln",
     description: "Anfrage für Betreuung, Gefährdungsbeurteilung oder Unterweisung in Köln.",
+    url: canonicalUrl("/kontakt"),
   },
-  alternates: { canonical: "https://www.arbeitssicherheitkoeln.de/kontakt" },
+  alternates: { canonical: canonicalUrl("/kontakt") },
 };
 
 export default function KontaktPage() {
   return (
     <>
-      <LocalBusinessSchema />
+      <JsonLdWebPageSchema
+        path="/kontakt"
+        pageType="ContactPage"
+        name="Kontakt – Arbeitssicherheit und Arbeitsschutz Köln"
+        description="Kontakt für unverbindliche Anfragen zu SiFa-Betreuung, Gefährdungsbeurteilung, Unterweisungen und Arbeitsschutz in Köln."
+      />
       <BreadcrumbSchema items={[{ name: "Startseite", path: "/" }, { name: "Kontakt", path: "/kontakt" }]} />
       <article className="section-padding">
         <div className="container-tight">

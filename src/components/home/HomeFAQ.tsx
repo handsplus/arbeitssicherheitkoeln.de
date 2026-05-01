@@ -13,10 +13,10 @@ export function HomeFAQ() {
       <div className="container-tight">
         <div className="mx-auto max-w-2xl text-center">
           <h2 id="faq-heading" className="heading-section">
-            Häufige Fragen zur Arbeitssicherheit in Köln
+            Häufige Fragen zu Arbeitssicherheit und Arbeitsschutz in Köln
           </h2>
           <p className="heading-section-sub">
-            Kurze Antworten auf typische Fragen zu externer Fachkraft, Betreuung und Leistungen.
+            Kurze Antworten zu externer SiFa, Arbeitsschutzbetreuung und unseren Leistungen.
           </p>
         </div>
         <div className="mx-auto mt-12 max-w-3xl">

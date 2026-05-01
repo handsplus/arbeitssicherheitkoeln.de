@@ -2,16 +2,19 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { blogPosts } from "@/data/blog";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
+import { BlogIndexSchema } from "@/components/seo/BlogIndexSchema";
+import { canonicalUrl } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Blog & Ratgeber – Arbeitssicherheit Köln",
+  title: "Blog & Ratgeber – Arbeitssicherheit & Arbeitsschutz Köln",
   description:
-    "Ratgeber zu Arbeitssicherheit, Gefährdungsbeurteilung, Unterweisung und externer SiFa in Köln. Praxiswissen für Unternehmen und Betriebe.",
+    "Ratgeber zu Arbeitssicherheit und Arbeitsschutz: Gefährdungsbeurteilung, Unterweisung, externe SiFa und mehr in Köln. Praxiswissen für Unternehmen.",
   openGraph: {
-    title: "Blog | Arbeitssicherheit Köln",
+    title: "Blog | Arbeitssicherheit & Arbeitsschutz Köln",
     description: "Ratgeber zu Arbeitsschutz, Gefährdungsbeurteilung und Unterweisung in Köln.",
+    url: canonicalUrl("/blog"),
   },
-  alternates: { canonical: "https://www.arbeitssicherheitkoeln.de/blog" },
+  alternates: { canonical: canonicalUrl("/blog") },
 };
 
 function formatDate(dateStr: string) {
@@ -25,15 +28,16 @@ function formatDate(dateStr: string) {
 export default function BlogPage() {
   return (
     <>
+      <BlogIndexSchema />
       <BreadcrumbSchema items={[{ name: "Startseite", path: "/" }, { name: "Blog & Ratgeber", path: "/blog" }]} />
       <article className="section-padding">
         <div className="container-tight">
           <header className="mx-auto max-w-2xl text-center">
             <h1 className="heading-section">
-              Blog & Ratgeber – Arbeitssicherheit Köln
+              Blog & Ratgeber – Arbeitssicherheit und Arbeitsschutz Köln
             </h1>
             <p className="heading-section-sub">
-              Praxisnahe Artikel zu Gefährdungsbeurteilung, Unterweisungspflicht, externer Fachkraft für Arbeitssicherheit und Arbeitsschutz für Unternehmen in Köln und Umgebung.
+              Praxisnahe Artikel zu Gefährdungsbeurteilung, Unterweisungspflicht, externer Fachkraft für Arbeitssicherheit (SiFa) und betrieblichem Arbeitsschutz für Unternehmen in Köln und Umgebung.
             </p>
           </header>
 

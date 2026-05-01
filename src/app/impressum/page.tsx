@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { siteConfig } from "@/config/site";
+import { canonicalUrl, siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Impressum",
   description: "Impressum und Angaben gemäß § 5 TMG für arbeitssicherheitkoeln.de.",
   robots: { index: false, follow: true },
-  alternates: { canonical: "https://www.arbeitssicherheitkoeln.de/impressum" },
+  alternates: { canonical: canonicalUrl("/impressum") },
 };
 
 export default function ImpressumPage() {

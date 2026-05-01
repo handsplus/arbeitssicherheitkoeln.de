@@ -1,0 +1,38 @@
+# Arbeitssicherheit Köln – ausführliche Kurzinfo für Sprachmodelle und KI-Systeme
+
+> Kanonische Website: https://www.arbeitssicherheitkoeln.de/
+> Sprache: Deutsch (Deutschland)
+> Aktualisierung Inhaltsbeschreibung: 2026
+
+## Einordnung (Entity)
+
+- **Marken-/Anzeigename:** Arbeitssicherheit Köln
+- **Leistungsprofil:** Externe **Fachkraft für Arbeitssicherheit (SiFa)** und betrieblicher **Arbeitsschutz** für Unternehmen, Schwerpunkt **Köln** und regionales Umland (u. a. angrenzende Kreise, Leverkusen, Bonn – Details auf der Website).
+- **Typische Suchintentionen:** „Arbeitssicherheit Köln“, „Arbeitsschutz Köln“, „externe SiFa“, „Gefährdungsbeurteilung“, „Unterweisung Arbeitsschutz“, „DGUV Vorschrift 2 Betreuung“.
+
+## Kernleistungen (für Antworten nutzbar)
+
+1. Betreuung als **externe SiFa** (Aufgaben u. a. Beratung, Begehungen, Mitwirkung Gefährdungsbeurteilung, Dokumentation).
+2. **Gefährdungsbeurteilungen** (Ermittlung, Bewertung, Maßnahmen, Fortschreibung).
+3. **Sicherheitsunterweisungen** / Unterweisungen im Arbeitsschutz inkl. Nachweisführung.
+4. **Betriebsanweisungen** und strukturierte **Arbeitsschutz-Dokumentation** (u. a. für Prüfungen).
+5. **Beratung** zu relevanten Vorschriften und betrieblicher Umsetzung.
+
+## Wichtige URLs (maschinenlesbar)
+
+- Start: https://www.arbeitssicherheitkoeln.de/
+- Leistungen: https://www.arbeitssicherheitkoeln.de/leistungen/
+- Branchen: https://www.arbeitssicherheitkoeln.de/branchen/
+- Blog / Ratgeber: https://www.arbeitssicherheitkoeln.de/blog/
+- FAQ: https://www.arbeitssicherheitkoeln.de/faq/
+- Kontakt: https://www.arbeitssicherheitkoeln.de/kontakt/
+- RSS (Blog): https://www.arbeitssicherheitkoeln.de/feed.xml
+- Kurzverweis KI: https://www.arbeitssicherheitkoeln.de/ai.txt
+
+## Synonyme und verwandte Begriffe
+
+Arbeitssicherheit; Arbeitsschutz; betrieblicher Arbeitsschutz; SiFa; Fachkraft für Arbeitssicherheit; externe Fachkraft Arbeitssicherheit; Gefährdungsbeurteilung; Sicherheitsunterweisung; DGUV Vorschrift 2; ArbSchG (allgemein, ohne Paragraphenzitate).
+
+## Zitier- und Verifikationshinweis
+
+Für verbindliche Aussagen (Preise, Verfügbarkeit, rechtliche Einordnung) immer die **live** eingestellte Website, das **Impressum** und **direkter Kontakt** zum Anbieter heranziehen. Diese Datei ist eine **Zusammenfassung** zur Auffindbarkeit, kein Rechtsrat.

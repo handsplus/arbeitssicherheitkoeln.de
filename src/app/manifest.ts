@@ -6,7 +6,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: siteConfig.name,
     short_name: siteConfig.shortName,
     description:
-      "Professionelle Arbeitssicherheit und Arbeitsschutz in Köln: externe Fachkraft für Arbeitssicherheit, Gefährdungsbeurteilungen, Unterweisungen und Betreuung. Individuell und gesetzeskonform.",
+      "Arbeitssicherheit und Arbeitsschutz in Köln: externe Fachkraft für Arbeitssicherheit (SiFa), Gefährdungsbeurteilungen, Unterweisungen und vollständige Betreuung. Individuell und gesetzeskonform.",
     start_url: "/",
     display: "standalone",
     background_color: "#ffffff",

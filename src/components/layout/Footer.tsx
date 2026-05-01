@@ -86,20 +86,30 @@ export function Footer() {
           <p className="text-center text-sm text-neutral-500">
             © {currentYear} {siteConfig.name}. Alle Rechte vorbehalten.
           </p>
-          <p className="mt-3 flex flex-wrap justify-center gap-x-4 gap-y-1 text-xs text-neutral-400">
-            {siteConfig.otherSites.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition-colors hover:text-neutral-600 focus-visible:rounded focus-visible:outline focus-visible:ring-2 focus-visible:ring-primary-500"
-              >
-                {link.label}
-                <span className="sr-only"> (öffnet in neuem Tab)</span>
-              </a>
-            ))}
-          </p>
+          <nav
+            aria-label="Weitere Websites"
+            className="mx-auto mt-5 max-w-2xl px-2"
+          >
+            <p className="text-center text-[0.65rem] leading-relaxed tracking-wide text-neutral-400/40 sm:text-[0.6875rem]">
+              <span className="font-normal text-neutral-400/35">Websites</span>
+              {siteConfig.otherSites.map((link) => (
+                <span key={link.href}>
+                  <span className="mx-1 text-neutral-300/35" aria-hidden>
+                    {" · "}
+                  </span>
+                  <a
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="break-all text-neutral-400/45 underline decoration-neutral-300/25 underline-offset-2 transition-colors hover:text-neutral-500/80 hover:decoration-neutral-400/50 focus-visible:rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500/70"
+                  >
+                    {link.label}
+                    <span className="sr-only"> (öffnet in neuem Tab)</span>
+                  </a>
+                </span>
+              ))}
+            </p>
+          </nav>
         </div>
       </div>
     </footer>

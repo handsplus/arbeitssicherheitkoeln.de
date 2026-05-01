@@ -1,11 +1,12 @@
-import type { FAQItem } from "@/components/faq/FAQAccordion";
+import type { FAQItem } from "@/types/faq";
 
-type Props = { items: FAQItem[] };
+type Props = { items: FAQItem[]; pageUrl?: string };
 
-export function FAQSchema({ items }: Props) {
+export function FAQSchema({ items, pageUrl }: Props) {
   const schema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    ...(pageUrl ? { url: pageUrl, "@id": `${pageUrl}#faq` } : {}),
     mainEntity: items.map((item) => ({
       "@type": "Question",
       name: item.question,

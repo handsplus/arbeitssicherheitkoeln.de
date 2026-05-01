@@ -1,17 +1,21 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
+import { LeistungenServiceSchema } from "@/components/seo/LeistungenServiceSchema";
+import { JsonLdWebPageSchema } from "@/components/seo/JsonLdWebPageSchema";
+import { canonicalUrl } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Leistungen – Arbeitssicherheit & Arbeitsschutz Köln",
   description:
-    "Leistungen für Arbeitssicherheit in Köln: externe Fachkraft für Arbeitssicherheit, Gefährdungsbeurteilungen, Unterweisungen, Betriebsanweisungen, Begehungen und Beratung. Individuell für Ihr Unternehmen.",
+    "Leistungen für Arbeitssicherheit und Arbeitsschutz in Köln: externe Fachkraft für Arbeitssicherheit (SiFa), Gefährdungsbeurteilungen, Unterweisungen, Betriebsanweisungen, Begehungen und Beratung. Individuell für Ihr Unternehmen.",
   openGraph: {
-    title: "Leistungen | Arbeitssicherheit Köln",
+    title: "Leistungen | Arbeitssicherheit & Arbeitsschutz Köln",
     description:
       "Externe SiFa, Gefährdungsbeurteilungen, Unterweisungen, Dokumentation – Ihr Leistungsspektrum für Arbeitsschutz in Köln.",
+    url: canonicalUrl("/leistungen"),
   },
-  alternates: { canonical: "https://www.arbeitssicherheitkoeln.de/leistungen" },
+  alternates: { canonical: canonicalUrl("/leistungen") },
 };
 
 const sections = [
@@ -62,15 +66,21 @@ const sections = [
 export default function LeistungenPage() {
   return (
     <>
+      <LeistungenServiceSchema />
+      <JsonLdWebPageSchema
+        path="/leistungen"
+        name="Leistungen für Arbeitssicherheit und Arbeitsschutz in Köln"
+        description="Externe SiFa, Gefährdungsbeurteilungen, Unterweisungen, Betriebsanweisungen, Begehungen und Arbeitsschutzberatung für Unternehmen in Köln und Umgebung."
+      />
       <BreadcrumbSchema items={[{ name: "Startseite", path: "/" }, { name: "Leistungen", path: "/leistungen" }]} />
     <article className="section-padding">
       <div className="container-tight">
         <header className="mx-auto max-w-3xl text-center" style={{ minHeight: "12rem" }}>
           <h1 className="heading-section">
-            Leistungen für Arbeitssicherheit in Köln
+            Leistungen für Arbeitssicherheit und Arbeitsschutz in Köln
           </h1>
           <p className="heading-section-sub">
-            Von der externen Fachkraft für Arbeitssicherheit über Gefährdungsbeurteilungen und Unterweisungen bis zur vollständigen Dokumentation: unser Leistungsspektrum für Unternehmen in Köln und Umgebung.
+            Von der externen Fachkraft für Arbeitssicherheit über Gefährdungsbeurteilungen und Unterweisungen bis zur vollständigen Arbeitsschutz-Dokumentation: unser Leistungsspektrum für Unternehmen in Köln und Umgebung.
           </p>
         </header>
 

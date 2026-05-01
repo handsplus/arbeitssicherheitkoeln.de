@@ -3,7 +3,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { branches, getBranchById, getAllBranchIds } from "@/data/branchen";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
-import { siteConfig } from "@/config/site";
+import { JsonLdWebPageSchema } from "@/components/seo/JsonLdWebPageSchema";
+import { canonicalUrl } from "@/config/site";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -21,9 +22,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: branch.title,
       description: branch.metaDescription,
+      url: canonicalUrl(`/branchen/${branch.id}`),
     },
     alternates: {
-      canonical: `${siteConfig.url}/branchen/${branch.id}`,
+      canonical: canonicalUrl(`/branchen/${branch.id}`),
     },
   };
 }
@@ -35,6 +37,11 @@ export default async function BranchPage({ params }: Props) {
 
   return (
     <>
+      <JsonLdWebPageSchema
+        path={`/branchen/${branch.id}`}
+        name={`${branch.title} – Arbeitssicherheit Köln`}
+        description={branch.metaDescription}
+      />
       <BreadcrumbSchema
         items={[
           { name: "Startseite", path: "/" },

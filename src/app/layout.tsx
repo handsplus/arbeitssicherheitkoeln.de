@@ -5,6 +5,8 @@ import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { WebSiteSchema } from "@/components/seo/WebSiteSchema";
+import { LocalBusinessSchema } from "@/components/seo/LocalBusinessSchema";
+import { absoluteUrl, canonicalUrl, siteConfig } from "@/config/site";
 
 const CookieBanner = dynamic(
   () => import("@/components/CookieBanner").then((m) => ({ default: m.CookieBanner })),
@@ -17,7 +19,7 @@ const sourceSans = Source_Sans_3({
   display: "swap",
 });
 
-const siteUrl = "https://www.arbeitssicherheitkoeln.de";
+const siteUrl = siteConfig.url;
 
 export const viewport: Viewport = {
   themeColor: "#0f201b",
@@ -29,21 +31,28 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   applicationName: "Arbeitssicherheit Köln",
   title: {
-    default: "Arbeitssicherheit Köln | Fachkraft für Arbeitsschutz & Betreuung",
-    template: "%s | Arbeitssicherheit Köln",
+    default:
+      "Arbeitssicherheit & Arbeitsschutz Köln | Externe SiFa & Fachkraft für Arbeitssicherheit",
+    template: "%s | Arbeitssicherheit & Arbeitsschutz Köln",
   },
   description:
-    "Professionelle Arbeitssicherheit und Arbeitsschutz in Köln: externe Fachkraft für Arbeitssicherheit, Gefährdungsbeurteilungen, Unterweisungen und Betreuung für Unternehmen. Individuell und gesetzeskonform.",
+    "Arbeitssicherheit und Arbeitsschutz in Köln: externe Fachkraft für Arbeitssicherheit (SiFa), Gefährdungsbeurteilungen, Sicherheitsunterweisungen und vollständige Arbeitsschutzbetreuung für Unternehmen. Gesetzeskonform, vor Ort in Köln und Umgebung.",
   referrer: "origin-when-cross-origin",
   keywords: [
+    "Arbeitssicherheit",
+    "Arbeitsschutz",
     "Arbeitssicherheit Köln",
     "Arbeitsschutz Köln",
     "Fachkraft für Arbeitssicherheit Köln",
     "externe Fachkraft Arbeitssicherheit Köln",
-    "Gefährdungsbeurteilung Köln",
+    "externe SiFa Köln",
+    "SiFa Köln",
     "Arbeitsschutzbetreuung Köln",
+    "betrieblicher Arbeitsschutz Köln",
+    "Gefährdungsbeurteilung Köln",
     "Sicherheitsunterweisung Köln",
-    "Arbeitsschutz Unternehmen Köln",
+    "DGUV Vorschrift 2 Betreuung",
+    "Arbeitsschutz kleine Unternehmen",
   ],
   authors: [{ name: "Arbeitssicherheit Köln", url: siteUrl }],
   creator: "Arbeitssicherheit Köln",
@@ -52,20 +61,38 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "de_DE",
-    url: siteUrl,
+    url: canonicalUrl("/"),
     siteName: "Arbeitssicherheit Köln",
-    title: "Arbeitssicherheit Köln | Fachkraft für Arbeitsschutz & Betreuung",
+    title: "Arbeitssicherheit & Arbeitsschutz Köln | Externe SiFa & Betreuung",
     description:
-      "Professionelle Arbeitssicherheit und Arbeitsschutz in Köln: externe Fachkraft, Gefährdungsbeurteilungen, Unterweisungen. Für Unternehmen in Köln und Umgebung.",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Arbeitssicherheit Köln" }],
+      "Arbeitssicherheit und Arbeitsschutz in Köln: externe Fachkraft für Arbeitssicherheit (SiFa), Gefährdungsbeurteilungen, Unterweisungen und Dokumentation für Unternehmen in Köln und Umgebung.",
+    images: [
+      {
+        url: siteConfig.ogImagePath,
+        width: 1200,
+        height: 630,
+        alt: "Arbeitssicherheit Köln – Arbeitsschutz und SiFa-Betreuung",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Arbeitssicherheit Köln | Fachkraft für Arbeitsschutz",
-    description: "Professionelle Arbeitssicherheit in Köln: Betreuung, Gefährdungsbeurteilungen, Unterweisungen.",
+    title: "Arbeitssicherheit & Arbeitsschutz Köln | Externe SiFa",
+    description:
+      "Fachkraft für Arbeitssicherheit in Köln: Betreuung, Gefährdungsbeurteilungen, Unterweisungen, Arbeitsschutz.",
+    images: [siteConfig.ogImagePath],
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
-  alternates: { canonical: siteUrl },
+  alternates: {
+    canonical: canonicalUrl("/"),
+    languages: { "de-DE": canonicalUrl("/") },
+    types: { "application/rss+xml": absoluteUrl("/feed.xml") },
+  },
+  appleWebApp: {
+    capable: true,
+    title: siteConfig.name,
+    statusBarStyle: "default",
+  },
   category: "business",
 };
 
@@ -84,7 +111,11 @@ export default function RootLayout({
             <a href="/" style={{ color: "#88bca6" }}>Zur Startseite</a>
           </div>
         </noscript>
+        <a href="#main-content" className="skip-link">
+          Zum Inhalt springen
+        </a>
         <WebSiteSchema />
+        <LocalBusinessSchema />
         <Header />
         <main id="main-content" className="flex-1" tabIndex={-1}>
           {children}

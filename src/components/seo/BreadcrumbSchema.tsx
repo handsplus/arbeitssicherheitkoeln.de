@@ -1,4 +1,4 @@
-import { siteConfig } from "@/config/site";
+import { canonicalUrl } from "@/config/site";
 
 type BreadcrumbItem = { name: string; path: string };
 
@@ -13,7 +13,7 @@ export function BreadcrumbSchema({ items }: { items: BreadcrumbItem[] }) {
       "@type": "ListItem",
       position: index + 1,
       name: item.name,
-      item: `${siteConfig.url}${item.path}`,
+      item: item.path === "/" ? canonicalUrl("/") : canonicalUrl(item.path),
     })),
   };
 

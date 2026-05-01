@@ -1,31 +1,35 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
+import { BranchenHubSchema } from "@/components/seo/BranchenHubSchema";
 import { branches } from "@/data/branchen";
+import { canonicalUrl } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Branchen – Arbeitssicherheit für jede Branche in Köln",
+  title: "Branchen – Arbeitssicherheit & Arbeitsschutz für jede Branche in Köln",
   description:
-    "Arbeitsschutz und Betreuung nach Branche: Handwerk, Büro, Produktion, Dienstleistung, Handel. Individuelle Lösungen für Unternehmen in Köln und Umgebung.",
+    "Arbeitssicherheit und Arbeitsschutz nach Branche: Handwerk, Büro, Produktion, Dienstleistung, Handel. SiFa-Betreuung und individuelle Lösungen in Köln und Umgebung.",
   openGraph: {
-    title: "Branchen | Arbeitssicherheit Köln",
+    title: "Branchen | Arbeitssicherheit & Arbeitsschutz Köln",
     description: "Arbeitssicherheit und SiFa-Betreuung für Handwerk, Büro, Produktion und mehr in Köln.",
+    url: canonicalUrl("/branchen"),
   },
-  alternates: { canonical: "https://www.arbeitssicherheitkoeln.de/branchen" },
+  alternates: { canonical: canonicalUrl("/branchen") },
 };
 
 export default function BranchenPage() {
   return (
     <>
+      <BranchenHubSchema />
       <BreadcrumbSchema items={[{ name: "Startseite", path: "/" }, { name: "Branchen", path: "/branchen" }]} />
       <article className="section-padding">
         <div className="container-tight">
           <header className="mx-auto max-w-2xl text-center">
             <h1 className="heading-section">
-              Branchen – Arbeitssicherheit für jede Branche in Köln
+              Branchen – Arbeitssicherheit und Arbeitsschutz in Köln
             </h1>
             <p className="heading-section-sub">
-              Ob Handwerk, Büro, Produktion, Handel oder soziale Einrichtung: Wir passen die Arbeitsschutzbetreuung an Ihre Branche und Ihre betrieblichen Gegebenheiten an.
+              Ob Handwerk, Büro, Produktion, Handel oder soziale Einrichtung: Wir passen Arbeitssicherheit und Arbeitsschutzbetreuung an Ihre Branche und Ihre betrieblichen Gegebenheiten an.
             </p>
           </header>
 

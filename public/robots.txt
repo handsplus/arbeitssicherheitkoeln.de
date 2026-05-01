@@ -1,5 +1,0 @@
-# Fallback robots.txt – Next.js generiert unter /sitemap.xml und /robots.txt automatisch.
-# Bei Bedarf anpassen. Primär wird die Ausgabe von src/app/robots.ts verwendet.
-User-agent: *
-Allow: /
-Sitemap: https://www.arbeitssicherheitkoeln.de/sitemap.xml

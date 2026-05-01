@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { siteConfig } from "@/config/site";
+import { canonicalUrl, siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Datenschutzerklärung",
   description: "Datenschutzerklärung der Webseite arbeitssicherheitkoeln.de – Informationen zur Verarbeitung personenbezogener Daten.",
   robots: { index: false, follow: true },
-  alternates: { canonical: "https://www.arbeitssicherheitkoeln.de/datenschutz" },
+  alternates: { canonical: canonicalUrl("/datenschutz") },
 };
 
 export default function DatenschutzPage() {

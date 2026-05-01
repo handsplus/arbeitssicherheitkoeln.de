@@ -8,6 +8,9 @@ export const siteConfig = {
   shortName: "AS Köln",
   /** Platzhalter: Bitte durch echte Domain ersetzen */
   url: "https://www.arbeitssicherheitkoeln.de",
+  /** Relativ zur Domain – für Open Graph / JSON-LD (Datei unter public/) */
+  ogImagePath: "/og-image.png",
+  logoPath: "/icon-512.png",
   companyName: "Arbeitssicherheit Köln",
   contactPerson: "Amin Korkae",
   phone: "0152 282 61619",
@@ -28,12 +31,12 @@ export const siteConfig = {
     linkedIn: "",
     xing: "",
   },
-  /** Weitere Seiten (unauffällig in der Fußzeile) */
+  /** Schwester- und Partnerseiten – in der Fußzeile absichtlich sehr dezent verlinkt */
   otherSites: [
-    { label: "Handsplus", href: "https://handsplus.de" },
-    { label: "Arbeitssicherheit.NRW", href: "https://www.arbeitssicherheit.nrw" },
-    { label: "Sigeko.Koeln", href: "https://sigeko.koeln" },
-    { label: "BrandschutzKöln", href: "https://brandschutzkoeln.com" },
+    { label: "www.sigeko.koeln", href: "https://www.sigeko.koeln" },
+    { label: "www.handsplus.de", href: "https://www.handsplus.de" },
+    { label: "www.arbeitssicherheit.nrw", href: "https://www.arbeitssicherheit.nrw" },
+    { label: "www.brandschutzkoeln.com", href: "https://www.brandschutzkoeln.com" },
   ],
 } as const;
 
@@ -52,6 +55,7 @@ export const footerLinks = {
     { label: "Leistungen", href: "/leistungen" },
     { label: "Branchen", href: "/branchen" },
     { label: "Blog", href: "/blog" },
+    { label: "RSS-Feed", href: "/feed.xml" },
     { label: "Über uns", href: "/ueber-uns" },
     { label: "FAQ", href: "/faq" },
     { label: "Kontakt", href: "/kontakt" },
@@ -61,3 +65,21 @@ export const footerLinks = {
     { label: "Datenschutz", href: "/datenschutz" },
   ],
 } as const;
+
+/** Volle URL zu einem Pfad (ohne trailing slash außer bei der Wurzel). */
+export function absoluteUrl(path: string): string {
+  const base = siteConfig.url.replace(/\/$/, "");
+  const p = path.startsWith("/") ? path : `/${path}`;
+  return `${base}${p}`;
+}
+
+/**
+ * Kanonische URL – konsistent mit next.config `trailingSlash: true`
+ * (Unterseiten enden mit /, die Startseite ist die Domain mit /).
+ */
+export function canonicalUrl(path: string): string {
+  const base = siteConfig.url.replace(/\/$/, "");
+  if (!path || path === "/") return `${base}/`;
+  const p = path.startsWith("/") ? path : `/${path}`;
+  return `${base}${p.endsWith("/") ? p : `${p}/`}`;
+}

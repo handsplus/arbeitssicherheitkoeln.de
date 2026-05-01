@@ -12,13 +12,13 @@ export function Hero() {
       <div className="container-tight relative z-10">
         <div className="mx-auto max-w-3xl text-center">
           <h1 id="hero-heading" className="text-4xl font-bold tracking-tight text-neutral-900 sm:text-5xl lg:text-6xl">
-            <span className="block">Arbeitssicherheit</span>
-            <span className="block text-primary-700">in Köln – Ihr Partner</span>
+            <span className="block">Arbeitssicherheit und Arbeitsschutz</span>
+            <span className="block text-primary-700">in Köln – Ihr Partner vor Ort</span>
           </h1>
           <p className="mt-6 text-lg text-neutral-600 sm:text-xl">
-            Externe Fachkraft für Arbeitssicherheit: professionelle Betreuung Ihrer Betriebe,
-            Gefährdungsbeurteilungen, Unterweisungen und Arbeitsschutzberatung – individuell,
-            gesetzeskonform und mit starkem Fokus auf Köln und Umgebung.
+            Externe Fachkraft für Arbeitssicherheit (SiFa): professionelle Arbeitsschutzbetreuung,
+            Gefährdungsbeurteilungen, Sicherheitsunterweisungen und Beratung – individuell,
+            gesetzeskonform und mit Fokus auf Köln und Umgebung.
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-5">
             <Link

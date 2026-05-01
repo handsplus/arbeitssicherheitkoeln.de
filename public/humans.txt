@@ -1,0 +1,15 @@
+/* TEAM */
+Kontakt: siehe https://www.arbeitssicherheitkoeln.de/kontakt/
+Firma: Arbeitssicherheit Köln
+
+/* SITE */
+Standort: Köln, Nordrhein-Westfalen, Deutschland
+Sprachen: Deutsch
+Themen: Arbeitssicherheit, Arbeitsschutz, SiFa, Gefährdungsbeurteilung, Unterweisungen
+
+/* TECH */
+Framework: Next.js (React)
+Styling: Tailwind CSS
+Hosting: statischer Export / CDN je nach Anbieter
+
+Letzte Aktualisierung der technischen Angaben: 2026

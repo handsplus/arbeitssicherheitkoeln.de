@@ -4,31 +4,33 @@ import { FAQAccordion } from "@/components/faq/FAQAccordion";
 import { faqPageFAQ } from "@/data/faq";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
+import { canonicalUrl } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "FAQ – Häufige Fragen zur Arbeitssicherheit Köln",
+  title: "FAQ – Häufige Fragen zu Arbeitssicherheit & Arbeitsschutz Köln",
   description:
-    "Antworten auf häufige Fragen: externe Fachkraft für Arbeitssicherheit, Kosten, Gefährdungsbeurteilung, Unterweisungen und Betreuung in Köln.",
+    "Antworten auf häufige Fragen: externe Fachkraft für Arbeitssicherheit (SiFa), Kosten, Gefährdungsbeurteilung, Unterweisungen und Arbeitsschutzbetreuung in Köln.",
   openGraph: {
-    title: "FAQ | Arbeitssicherheit Köln",
+    title: "FAQ | Arbeitssicherheit & Arbeitsschutz Köln",
     description: "Häufige Fragen zu Arbeitssicherheit und Arbeitsschutz in Köln.",
+    url: canonicalUrl("/faq"),
   },
-  alternates: { canonical: "https://www.arbeitssicherheitkoeln.de/faq" },
+  alternates: { canonical: canonicalUrl("/faq") },
 };
 
 export default function FAQPage() {
   return (
     <>
-      <FAQSchema items={faqPageFAQ} />
+      <FAQSchema items={faqPageFAQ} pageUrl={canonicalUrl("/faq")} />
       <BreadcrumbSchema items={[{ name: "Startseite", path: "/" }, { name: "FAQ", path: "/faq" }]} />
       <article className="section-padding">
         <div className="container-tight">
           <header className="mx-auto max-w-2xl text-center">
             <h1 className="heading-section">
-              Häufige Fragen zur Arbeitssicherheit in Köln
+              Häufige Fragen zu Arbeitssicherheit und Arbeitsschutz in Köln
             </h1>
             <p className="heading-section-sub">
-              Kurze Antworten auf typische Fragen zu externer Fachkraft, Betreuung, Gefährdungsbeurteilung und Unterweisungen.
+              Kurze Antworten zu externer SiFa, Betreuung, Gefährdungsbeurteilung, Unterweisungen und Arbeitsschutz in Köln.
             </p>
           </header>
 

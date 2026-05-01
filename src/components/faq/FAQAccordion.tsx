@@ -1,11 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import type { FAQItem } from "@/types/faq";
 
-export type FAQItem = {
-  question: string;
-  answer: string;
-};
+export type { FAQItem };
 
 export function FAQAccordion({ items }: { items: FAQItem[] }) {
   const [openId, setOpenId] = useState<number | null>(0);

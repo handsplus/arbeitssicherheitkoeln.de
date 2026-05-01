@@ -1,16 +1,19 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
+import { JsonLdWebPageSchema } from "@/components/seo/JsonLdWebPageSchema";
+import { canonicalUrl } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Über uns – Warum Arbeitssicherheit Köln",
+  title: "Über uns – Arbeitssicherheit & Arbeitsschutz Köln",
   description:
-    "Erfahren Sie, warum wir Ihr Partner für Arbeitssicherheit in Köln sind: Erfahrung, lokaler Bezug, individuelle Betreuung und hohe fachliche Standards.",
+    "Ihr Partner für Arbeitssicherheit und Arbeitsschutz in Köln: Erfahrung, lokaler Bezug, individuelle SiFa-Betreuung und hohe fachliche Standards.",
   openGraph: {
-    title: "Über uns | Arbeitssicherheit Köln",
-    description: "Ihr Partner für Arbeitssicherheit in Köln – Erfahrung, Lokalität, Vertrauen.",
+    title: "Über uns | Arbeitssicherheit & Arbeitsschutz Köln",
+    description: "Partner für Arbeitssicherheit und Arbeitsschutz in Köln – Erfahrung, Lokalität, Vertrauen.",
+    url: canonicalUrl("/ueber-uns"),
   },
-  alternates: { canonical: "https://www.arbeitssicherheitkoeln.de/ueber-uns" },
+  alternates: { canonical: canonicalUrl("/ueber-uns") },
 };
 
 const values = [
@@ -35,15 +38,21 @@ const values = [
 export default function UeberUnsPage() {
   return (
     <>
+      <JsonLdWebPageSchema
+        path="/ueber-uns"
+        pageType="AboutPage"
+        name="Über uns – Arbeitssicherheit und Arbeitsschutz in Köln"
+        description="Werte, lokaler Bezug und fachliche Kompetenz: Ihr Partner für betriebliche Arbeitssicherheit und SiFa-Betreuung in Köln."
+      />
       <BreadcrumbSchema items={[{ name: "Startseite", path: "/" }, { name: "Über uns", path: "/ueber-uns" }]} />
     <article className="section-padding">
       <div className="container-tight">
         <header className="mx-auto max-w-3xl text-center">
           <h1 className="heading-section">
-            Über uns – Ihr Partner für Arbeitssicherheit in Köln
+            Über uns – Partner für Arbeitssicherheit und Arbeitsschutz in Köln
           </h1>
           <p className="heading-section-sub">
-            Wir unterstützen Unternehmen in Köln und Umgebung dabei, Arbeitssicherheit und Arbeitsschutz professionell umzusetzen – mit lokalem Bezug, fachlicher Tiefe und dem Anspruch, Ihr verlässlicher Partner zu sein.
+            Wir unterstützen Unternehmen in Köln und Umgebung dabei, Arbeitssicherheit und betrieblichen Arbeitsschutz professionell umzusetzen – mit lokalem Bezug, fachlicher Tiefe und dem Anspruch, Ihr verlässlicher Partner zu sein.
           </p>
         </header>
 
