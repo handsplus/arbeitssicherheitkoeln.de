@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     template: "%s | Arbeitssicherheit & Arbeitsschutz Köln",
   },
   description:
-    "Arbeitssicherheit und Arbeitsschutz in Köln: externe Fachkraft für Arbeitssicherheit (SiFa), Gefährdungsbeurteilungen, Sicherheitsunterweisungen und vollständige Arbeitsschutzbetreuung für Unternehmen. Gesetzeskonform, vor Ort in Köln und Umgebung.",
+    "Arbeitssicherheit Köln: externe SiFa, Gefährdungsbeurteilungen, Unterweisungen – Arbeitsschutz für Betriebe in Köln und Umgebung.",
   referrer: "origin-when-cross-origin",
   keywords: [
     "Arbeitssicherheit",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     siteName: "Arbeitssicherheit Köln",
     title: "Arbeitssicherheit & Arbeitsschutz Köln | Externe SiFa & Betreuung",
     description:
-      "Arbeitssicherheit und Arbeitsschutz in Köln: externe Fachkraft für Arbeitssicherheit (SiFa), Gefährdungsbeurteilungen, Unterweisungen und Dokumentation für Unternehmen in Köln und Umgebung.",
+      "SiFa & Arbeitssicherheit in Köln: Gefährdungsbeurteilung, Unterweisungen, externe Betreuung – gesetzeskonform vor Ort.",
     images: [
       {
         url: siteConfig.ogImagePath,
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Arbeitssicherheit & Arbeitsschutz Köln | Externe SiFa",
     description:
-      "Fachkraft für Arbeitssicherheit in Köln: Betreuung, Gefährdungsbeurteilungen, Unterweisungen, Arbeitsschutz.",
+      "Externe SiFa Köln: Arbeitssicherheit, Gefährdungsbeurteilung, Unterweisungen, Arbeitsschutz – Betreuung vor Ort.",
     images: [siteConfig.ogImagePath],
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },

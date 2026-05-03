@@ -16,7 +16,8 @@ export function Hero() {
             <span className="text-primary-700">in Köln – Ihr Partner vor Ort</span>
           </h1>
           <p className="mt-6 text-lg text-neutral-600 sm:text-xl">
-            Externe Fachkraft für Arbeitssicherheit (SiFa): professionelle Arbeitsschutzbetreuung,
+            Als Ihr Partner für Arbeitssicherheit und Arbeitsschutz in Köln begleiten wir Sie als
+            externe Fachkraft für Arbeitssicherheit (SiFa): professionelle Arbeitsschutzbetreuung,
             Gefährdungsbeurteilungen, Sicherheitsunterweisungen und Beratung – individuell,
             gesetzeskonform und mit Fokus auf Köln und Umgebung.
           </p>

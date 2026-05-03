@@ -11,7 +11,7 @@ export function HomeWebPageSchema() {
     url: canonicalUrl("/"),
     name: "Arbeitssicherheit und Arbeitsschutz in Köln | Arbeitssicherheit Köln",
     description:
-      "Externe Fachkraft für Arbeitssicherheit (SiFa) und Arbeitsschutzbetreuung in Köln: Gefährdungsbeurteilungen, Unterweisungen, Begehungen und Dokumentation für Unternehmen.",
+      "Arbeitssicherheit und Arbeitsschutz in Köln: externe SiFa, Gefährdungsbeurteilungen, Unterweisungen – Partner für Betriebe vor Ort.",
     inLanguage: "de-DE",
     isPartOf: { "@id": `${siteConfig.url}/#website` },
     about: {
