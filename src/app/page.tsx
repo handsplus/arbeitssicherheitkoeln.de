@@ -15,7 +15,9 @@ import { homeFAQ } from "@/data/faq";
 import { canonicalUrl } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Arbeitssicherheit & Arbeitsschutz Köln – externe SiFa & Betreuung",
+  title: {
+    absolute: "Arbeitssicherheit & Arbeitsschutz Köln | Externe SiFa",
+  },
   description:
     "Arbeitssicherheit und Arbeitsschutz in Köln: externe SiFa, Gefährdungsbeurteilungen, Unterweisungen – Ihr Partner für Betriebe vor Ort.",
   openGraph: {
