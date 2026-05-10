@@ -46,12 +46,6 @@ export function BlogTeaser() {
                 <p className="mt-2 flex-1 text-sm text-neutral-600 line-clamp-3">
                   {post.metaDescription}
                 </p>
-                <Link
-                  href={`/blog/${post.slug}`}
-                  className="link-underline mt-4 inline-flex text-sm font-medium"
-                >
-                  Weiterlesen
-                </Link>
               </article>
             </li>
           ))}

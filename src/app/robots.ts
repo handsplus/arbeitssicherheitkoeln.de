@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { absoluteUrl, siteConfig } from "@/config/site";
+import { absoluteUrl } from "@/config/site";
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -11,6 +11,5 @@ export default function robots(): MetadataRoute.Robots {
       },
     ],
     sitemap: absoluteUrl("/sitemap.xml"),
-    host: siteConfig.url.replace(/^https?:\/\//, "").replace(/\/$/, ""),
   };
 }
