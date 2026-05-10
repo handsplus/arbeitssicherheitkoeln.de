@@ -7,7 +7,7 @@ export const siteConfig = {
   name: "Arbeitssicherheit Köln",
   shortName: "AS Köln",
   /** Platzhalter: Bitte durch echte Domain ersetzen */
-  url: "https://www.arbeitssicherheitkoeln.de",
+  url: "https://arbeitssicherheitkoeln.de",
   /** Relativ zur Domain – für Open Graph / JSON-LD (Datei unter public/) */
   ogImagePath: "/og-image.png",
   logoPath: "/icon-512.png",

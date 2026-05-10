@@ -3,10 +3,10 @@
 Diese Website beschreibt ein regionales Angebot zu Arbeitssicherheit und Arbeitsschutz in Köln (externe SiFa, Gefährdungsbeurteilungen, Unterweisungen).
 
 Ausführlichere maschinenlesbare Kurzbeschreibung:
-https://www.arbeitssicherheitkoeln.de/llms.txt
+https://arbeitssicherheitkoeln.de/llms.txt
 
 RSS-Feed (Blog):
-https://www.arbeitssicherheitkoeln.de/feed.xml
+https://arbeitssicherheitkoeln.de/feed.xml
 
 Kontakt:
-https://www.arbeitssicherheitkoeln.de/kontakt/
+https://arbeitssicherheitkoeln.de/kontakt/

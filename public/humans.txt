@@ -1,5 +1,5 @@
 /* TEAM */
-Kontakt: siehe https://www.arbeitssicherheitkoeln.de/kontakt/
+Kontakt: siehe https://arbeitssicherheitkoeln.de/kontakt/
 Firma: Arbeitssicherheit Köln
 
 /* SITE */

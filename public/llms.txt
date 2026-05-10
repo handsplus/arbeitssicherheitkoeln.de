@@ -1,6 +1,6 @@
 # Arbeitssicherheit Köln – ausführliche Kurzinfo für Sprachmodelle und KI-Systeme
 
-> Kanonische Website: https://www.arbeitssicherheitkoeln.de/
+> Kanonische Website: https://arbeitssicherheitkoeln.de/
 > Sprache: Deutsch (Deutschland)
 > Aktualisierung Inhaltsbeschreibung: 2026
 
@@ -20,14 +20,14 @@
 
 ## Wichtige URLs (maschinenlesbar)
 
-- Start: https://www.arbeitssicherheitkoeln.de/
-- Leistungen: https://www.arbeitssicherheitkoeln.de/leistungen/
-- Branchen: https://www.arbeitssicherheitkoeln.de/branchen/
-- Blog / Ratgeber: https://www.arbeitssicherheitkoeln.de/blog/
-- FAQ: https://www.arbeitssicherheitkoeln.de/faq/
-- Kontakt: https://www.arbeitssicherheitkoeln.de/kontakt/
-- RSS (Blog): https://www.arbeitssicherheitkoeln.de/feed.xml
-- Kurzverweis KI: https://www.arbeitssicherheitkoeln.de/ai.txt
+- Start: https://arbeitssicherheitkoeln.de/
+- Leistungen: https://arbeitssicherheitkoeln.de/leistungen/
+- Branchen: https://arbeitssicherheitkoeln.de/branchen/
+- Blog / Ratgeber: https://arbeitssicherheitkoeln.de/blog/
+- FAQ: https://arbeitssicherheitkoeln.de/faq/
+- Kontakt: https://arbeitssicherheitkoeln.de/kontakt/
+- RSS (Blog): https://arbeitssicherheitkoeln.de/feed.xml
+- Kurzverweis KI: https://arbeitssicherheitkoeln.de/ai.txt
 
 ## Synonyme und verwandte Begriffe
 
