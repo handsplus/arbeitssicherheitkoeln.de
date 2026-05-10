@@ -19,11 +19,11 @@ export const metadata: Metadata = {
     absolute: "Arbeitssicherheit & Arbeitsschutz Köln | Externe SiFa",
   },
   description:
-    "Arbeitssicherheit und Arbeitsschutz in Köln: externe SiFa, Gefährdungsbeurteilungen, Unterweisungen – Ihr Partner für Betriebe vor Ort.",
+    "Externe Fachkraft für Arbeitssicherheit (SiFa) in Köln: Arbeitsschutz, Gefährdungsbeurteilung, Unterweisungen – Betreuung für Betriebe vor Ort.",
   openGraph: {
     title: "Arbeitssicherheit & Arbeitsschutz Köln | Externe SiFa",
     description:
-      "SiFa in Köln: Arbeitssicherheit, Gefährdungsbeurteilung, Unterweisungen und Arbeitsschutz-Betreuung für Betriebe – vor Ort.",
+      "Externe SiFa / Fachkraft für Arbeitssicherheit in Köln: Gefährdungsbeurteilung, Unterweisungen, Arbeitsschutz vor Ort.",
     url: canonicalUrl("/"),
   },
   alternates: { canonical: canonicalUrl("/") },
