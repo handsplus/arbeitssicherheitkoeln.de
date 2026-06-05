@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { JsonLdWebPageSchema } from "@/components/seo/JsonLdWebPageSchema";
-import { canonicalUrl } from "@/config/site";
+import { canonicalUrl, siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Über uns – Arbeitssicherheit & Arbeitsschutz Köln",
@@ -58,7 +58,10 @@ export default function UeberUnsPage() {
 
         <div className="mx-auto mt-16 max-w-3xl space-y-8 text-neutral-600">
           <p className="text-lg leading-relaxed">
-            Als externe Fachkraft für Arbeitssicherheit übernehmen wir die gesetzlich geforderte Betreuung von Betrieben, die keine eigene SiFa beschäftigen. Unser Fokus liegt auf kleinen und mittleren Unternehmen in Köln und der Region – von Handwerk über Dienstleistung bis zur Produktion.
+            {siteConfig.name} ist ein Angebot von {siteConfig.legalName} ({siteConfig.legalOwner}). Als externe
+            Fachkraft für Arbeitssicherheit übernehmen wir die gesetzlich geforderte Betreuung von Betrieben, die keine
+            eigene SiFa beschäftigen. Unser Fokus liegt auf kleinen und mittleren Unternehmen in Köln und der Region –
+            von Handwerk über Dienstleistung bis zur Produktion.
           </p>
           <p className="leading-relaxed">
             Unser Ziel ist es, Sie zu entlasten und gleichzeitig Rechtssicherheit zu schaffen: durch Gefährdungsbeurteilungen, Unterweisungen, Betriebsanweisungen und eine strukturierte Dokumentation, die Behörden und Berufsgenossenschaften genügt. Dabei legen wir Wert auf verständliche Kommunikation und maßgeschneiderte Lösungen – nicht auf Bürokratie um ihrer selbst willen.

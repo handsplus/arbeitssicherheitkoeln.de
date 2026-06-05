@@ -8,7 +8,13 @@ export function LocalBusinessSchema() {
     "@type": ["LocalBusiness", "ProfessionalService"],
     "@id": `${siteConfig.url}/#organization`,
     name: siteConfig.companyName,
-    alternateName: ["Arbeitsschutz Köln", "SiFa Köln", "Arbeitssicherheit Köln – externe Fachkraft"],
+    legalName: siteConfig.legalName,
+    alternateName: [
+      "Arbeitsschutz Köln",
+      "SiFa Köln",
+      "Fachkraft für Arbeitssicherheit Köln",
+      "Externe SiFa Köln",
+    ],
     description:
       "Arbeitssicherheit und Arbeitsschutz in Köln: externe Fachkraft für Arbeitssicherheit (SiFa), Gefährdungsbeurteilungen, Sicherheitsunterweisungen, Betriebsanweisungen und vollständige Arbeitsschutzbetreuung für Unternehmen in Köln und Umgebung.",
     slogan: "Ihr Partner für Arbeitssicherheit und Arbeitsschutz in Köln",

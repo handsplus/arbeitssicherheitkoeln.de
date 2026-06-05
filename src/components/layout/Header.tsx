@@ -13,7 +13,7 @@ export function Header() {
           className="flex items-center gap-2 font-display text-xl font-bold text-neutral-900 focus-visible:rounded-lg focus-visible:outline focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2"
           aria-label={`${siteConfig.name} – Startseite`}
         >
-          <span className="text-primary-700">{siteConfig.shortName}</span>
+          <span className="text-base font-bold text-primary-700 sm:text-xl">{siteConfig.shortName}</span>
         </Link>
 
         <nav

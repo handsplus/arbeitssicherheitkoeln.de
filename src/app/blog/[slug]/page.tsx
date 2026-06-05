@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { blogPosts, getPostBySlug, getAllSlugs } from "@/data/blog";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { ArticleSchema } from "@/components/seo/ArticleSchema";
-import { canonicalUrl } from "@/config/site";
+import { canonicalUrl, sifaPagePath } from "@/config/site";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -123,6 +123,9 @@ export default async function BlogPostPage({ params }: Props) {
           </aside>
 
           <footer className="mt-10 flex flex-col gap-6 border-t border-neutral-200 pt-10">
+            <Link href={sifaPagePath} className="link-underline font-medium">
+              Externe Fachkraft für Arbeitssicherheit in Köln
+            </Link>
             <Link href="/leistungen" className="link-underline font-medium">
               Alle Leistungen
             </Link>

@@ -84,7 +84,18 @@ export function Footer() {
         </div>
         <div className="mt-10 border-t border-neutral-200 pt-6">
           <p className="text-center text-sm text-neutral-500">
-            © {currentYear} {siteConfig.name}. Alle Rechte vorbehalten.
+            © {currentYear} {siteConfig.legalName}. Alle Rechte vorbehalten.
+          </p>
+          <p className="mt-1 text-center text-xs text-neutral-400">
+            {siteConfig.name} –{" "}
+            <a
+              href={siteConfig.legalWebsite}
+              className="link-underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              handsplus.de
+            </a>
           </p>
           <nav
             aria-label="Weitere Websites"

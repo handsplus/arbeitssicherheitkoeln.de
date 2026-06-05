@@ -1,11 +1,12 @@
 import type { MetadataRoute } from "next";
-import { absoluteUrl, canonicalUrl } from "@/config/site";
+import { absoluteUrl, canonicalUrl, sifaPagePath } from "@/config/site";
 import { blogPosts } from "@/data/blog";
 import { branches } from "@/data/branchen";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
     { url: canonicalUrl("/"), lastModified: new Date(), changeFrequency: "monthly", priority: 1 },
+    { url: canonicalUrl(sifaPagePath), lastModified: new Date(), changeFrequency: "monthly", priority: 0.95 },
     { url: canonicalUrl("/leistungen"), lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
     { url: canonicalUrl("/branchen"), lastModified: new Date(), changeFrequency: "monthly", priority: 0.85 },
     { url: canonicalUrl("/blog"), lastModified: new Date(), changeFrequency: "weekly", priority: 0.85 },

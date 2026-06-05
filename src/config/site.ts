@@ -1,17 +1,25 @@
 /**
- * Zentrale Konfiguration und Platzhalter für die Webseite.
- * Kontaktdaten und Firmenname bitte durch echte Angaben ersetzen.
+ * Zentrale Konfiguration der Webseite.
+ * Rechtliche Angaben entsprechen Health and Safety + (vgl. brandschutzkoeln.com/impressum).
  */
 
+/** Kanonischer Pfad der SiFa-Landingpage (SEO-Zielseite). */
+export const sifaPagePath = "/fachkraft-fuer-arbeitssicherheit-koeln" as const;
+
 export const siteConfig = {
+  /** Anzeigename / Marke dieser Domain */
   name: "Arbeitssicherheit Köln",
-  shortName: "AS Köln",
-  /** Platzhalter: Bitte durch echte Domain ersetzen */
+  shortName: "Arbeitssicherheit Köln",
   url: "https://arbeitssicherheitkoeln.de",
   /** Relativ zur Domain – für Open Graph / JSON-LD (Datei unter public/) */
   ogImagePath: "/og-image.png",
   logoPath: "/icon-512.png",
+  /** Marketingname auf dieser Seite */
   companyName: "Arbeitssicherheit Köln",
+  /** Rechtlicher Anbieter gemäß § 5 TMG */
+  legalName: "Health and Safety +",
+  legalOwner: "Amin Korkae",
+  legalWebsite: "https://www.handsplus.de",
   contactPerson: "Amin Korkae",
   phone: "0152 282 61619",
   email: "kontakt@handsplus.de",
@@ -52,6 +60,7 @@ export const navigation = [
 
 export const footerLinks = {
   service: [
+    { label: "Externe SiFa Köln", href: sifaPagePath },
     { label: "Leistungen", href: "/leistungen" },
     { label: "Branchen", href: "/branchen" },
     { label: "Blog", href: "/blog" },

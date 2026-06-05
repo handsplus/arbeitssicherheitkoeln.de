@@ -4,7 +4,7 @@ import { FAQAccordion } from "@/components/faq/FAQAccordion";
 import { faqPageFAQ } from "@/data/faq";
 import { FAQSchema } from "@/components/seo/FAQSchema";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
-import { canonicalUrl } from "@/config/site";
+import { canonicalUrl, sifaPagePath } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "FAQ – Häufige Fragen zu Arbeitssicherheit & Arbeitsschutz Köln",
@@ -38,7 +38,15 @@ export default function FAQPage() {
             <FAQAccordion items={faqPageFAQ} />
           </div>
 
-          <p className="mt-12 text-center">
+          <p className="mt-10 text-center text-neutral-600">
+            Ausführliche Informationen zur{" "}
+            <Link href={sifaPagePath} className="link-underline font-medium">
+              externen Fachkraft für Arbeitssicherheit in Köln
+            </Link>
+            .
+          </p>
+
+          <p className="mt-8 text-center">
             <Link href="/kontakt" className="btn-primary">
               Persönliche Anfrage stellen
             </Link>

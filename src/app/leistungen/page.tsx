@@ -3,14 +3,14 @@ import Link from "next/link";
 import { BreadcrumbSchema } from "@/components/seo/BreadcrumbSchema";
 import { LeistungenServiceSchema } from "@/components/seo/LeistungenServiceSchema";
 import { JsonLdWebPageSchema } from "@/components/seo/JsonLdWebPageSchema";
-import { canonicalUrl } from "@/config/site";
+import { canonicalUrl, sifaPagePath } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Leistungen – Arbeitssicherheit & Arbeitsschutz Köln",
+  title: "Leistungen – Arbeitssicherheit Köln | Externe SiFa",
   description:
-    "Leistungen für Arbeitssicherheit und Arbeitsschutz in Köln: externe Fachkraft für Arbeitssicherheit (SiFa), Gefährdungsbeurteilungen, Unterweisungen, Betriebsanweisungen, Begehungen und Beratung. Individuell für Ihr Unternehmen.",
+    "Leistungen für Arbeitssicherheit in Köln: externe Fachkraft für Arbeitssicherheit (SiFa), Gefährdungsbeurteilungen, Unterweisungen, Betriebsanweisungen, Begehungen und Beratung. Individuell für Ihr Unternehmen.",
   openGraph: {
-    title: "Leistungen | Arbeitssicherheit & Arbeitsschutz Köln",
+    title: "Leistungen | Arbeitssicherheit Köln",
     description:
       "Externe SiFa, Gefährdungsbeurteilungen, Unterweisungen, Dokumentation – Ihr Leistungsspektrum für Arbeitsschutz in Köln.",
     url: canonicalUrl("/leistungen"),
@@ -107,6 +107,13 @@ export default function LeistungenPage() {
                   <p key={i}>{para.trim()}</p>
                 ))}
               </div>
+              {section.id === "fachkraft" && (
+                <p className="mt-6">
+                  <Link href={sifaPagePath} className="link-underline font-medium">
+                    Ausführliche Informationen zur externen Fachkraft für Arbeitssicherheit in Köln →
+                  </Link>
+                </p>
+              )}
             </section>
           ))}
         </div>

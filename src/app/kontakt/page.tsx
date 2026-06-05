@@ -30,7 +30,7 @@ export default function KontaktPage() {
         <div className="container-tight">
           <header className="mx-auto max-w-2xl text-center">
             <h1 className="heading-section">
-              Kontakt – Wir freuen uns auf Ihre Anfrage
+              Kontakt – Arbeitssicherheit Köln
             </h1>
             <p className="heading-section-sub">
               Ob erste Fragen zur Arbeitssicherheit in Köln oder konkreter Betreuungswunsch: schreiben Sie uns oder rufen Sie an. Wir melden uns zeitnah.

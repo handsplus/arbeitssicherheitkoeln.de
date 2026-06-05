@@ -12,8 +12,8 @@ export function Hero() {
       <div className="container-tight relative z-10">
         <div className="mx-auto max-w-3xl text-center">
           <h1 id="hero-heading" className="text-4xl font-bold tracking-tight text-neutral-900 sm:text-5xl lg:text-6xl">
-            Arbeitssicherheit und Arbeitsschutz{" "}
-            <span className="text-primary-700">in Köln – Ihr Partner vor Ort</span>
+            Arbeitssicherheit Köln –{" "}
+            <span className="text-primary-700">Ihr Partner für Arbeitsschutz vor Ort</span>
           </h1>
           <p className="mt-6 text-lg text-neutral-600 sm:text-xl">
             Als Ihr Partner für Arbeitssicherheit und Arbeitsschutz in Köln begleiten wir Sie als

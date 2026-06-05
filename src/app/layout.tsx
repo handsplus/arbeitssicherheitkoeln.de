@@ -32,11 +32,11 @@ export const metadata: Metadata = {
   applicationName: "Arbeitssicherheit Köln",
   title: {
     default:
-      "Arbeitssicherheit & Arbeitsschutz Köln | Externe SiFa & Fachkraft für Arbeitssicherheit",
-    template: "%s | Arbeitssicherheit & Arbeitsschutz Köln",
+      "Arbeitssicherheit Köln | Externe SiFa & Fachkraft für Arbeitssicherheit",
+    template: "%s | Arbeitssicherheit Köln",
   },
   description:
-    "Arbeitssicherheit Köln: externe SiFa, Gefährdungsbeurteilungen, Unterweisungen – Arbeitsschutz für Betriebe in Köln und Umgebung.",
+    "Arbeitssicherheit Köln: externe Fachkraft für Arbeitssicherheit (SiFa), Gefährdungsbeurteilungen und Unterweisungen – persönliche Betreuung vor Ort in Köln und Umgebung.",
   referrer: "origin-when-cross-origin",
   keywords: [
     "Arbeitssicherheit",
@@ -63,9 +63,9 @@ export const metadata: Metadata = {
     locale: "de_DE",
     url: canonicalUrl("/"),
     siteName: "Arbeitssicherheit Köln",
-    title: "Arbeitssicherheit & Arbeitsschutz Köln | Externe SiFa & Betreuung",
+    title: "Arbeitssicherheit Köln | Externe SiFa & Fachkraft für Arbeitssicherheit",
     description:
-      "SiFa & Arbeitssicherheit in Köln: Gefährdungsbeurteilung, Unterweisungen, externe Betreuung – gesetzeskonform vor Ort.",
+      "Arbeitssicherheit Köln: externe SiFa, Gefährdungsbeurteilung, Unterweisungen – gesetzeskonforme Betreuung vor Ort.",
     images: [
       {
         url: siteConfig.ogImagePath,
@@ -77,9 +77,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Arbeitssicherheit & Arbeitsschutz Köln | Externe SiFa",
+    title: "Arbeitssicherheit Köln | Externe SiFa & Fachkraft für Arbeitssicherheit",
     description:
-      "Externe SiFa Köln: Arbeitssicherheit, Gefährdungsbeurteilung, Unterweisungen, Arbeitsschutz – Betreuung vor Ort.",
+      "Arbeitssicherheit Köln: externe Fachkraft für Arbeitssicherheit, Gefährdungsbeurteilung, Unterweisungen – Betreuung vor Ort.",
     images: [siteConfig.ogImagePath],
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },

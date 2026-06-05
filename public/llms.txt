@@ -21,6 +21,7 @@
 ## Wichtige URLs (maschinenlesbar)
 
 - Start: https://arbeitssicherheitkoeln.de/
+- Externe SiFa / Fachkraft für Arbeitssicherheit Köln: https://arbeitssicherheitkoeln.de/fachkraft-fuer-arbeitssicherheit-koeln/
 - Leistungen: https://arbeitssicherheitkoeln.de/leistungen/
 - Branchen: https://arbeitssicherheitkoeln.de/branchen/
 - Blog / Ratgeber: https://arbeitssicherheitkoeln.de/blog/

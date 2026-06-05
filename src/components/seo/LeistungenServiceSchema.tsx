@@ -1,4 +1,4 @@
-import { canonicalUrl, siteConfig } from "@/config/site";
+import { canonicalUrl, siteConfig, sifaPagePath } from "@/config/site";
 
 const services: { name: string; description: string; anchor: string }[] = [
   {
@@ -58,7 +58,7 @@ export function LeistungenServiceSchema() {
         description: s.description,
         provider: { "@id": `${siteConfig.url}/#organization` },
         areaServed: { "@type": "City", name: "Köln" },
-        url: `${base}#${s.anchor}`,
+        url: s.anchor === "fachkraft" ? canonicalUrl(sifaPagePath) : `${base}#${s.anchor}`,
       },
     })),
   };
