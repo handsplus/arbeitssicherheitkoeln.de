@@ -1,3 +1,211 @@
 {
-  "buildCommand": "npm run build"
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "npm run build",
+  "redirects": [
+    {
+      "source": "/fachkraft-fuer-arbeitssicherheit-koeln",
+      "destination": "https://arbeitssicherheit.nrw/fachkraft-fuer-arbeitssicherheit-koeln",
+      "permanent": true
+    },
+    {
+      "source": "/fachkraft-fuer-arbeitssicherheit-koeln/",
+      "destination": "https://arbeitssicherheit.nrw/fachkraft-fuer-arbeitssicherheit-koeln",
+      "permanent": true
+    },
+    {
+      "source": "/leistungen",
+      "destination": "https://arbeitssicherheit.nrw/leistungen/arbeitssicherheit",
+      "permanent": true
+    },
+    {
+      "source": "/leistungen/",
+      "destination": "https://arbeitssicherheit.nrw/leistungen/arbeitssicherheit",
+      "permanent": true
+    },
+    {
+      "source": "/e-learning",
+      "destination": "https://arbeitssicherheit.nrw/leistungen/schulungen",
+      "permanent": true
+    },
+    {
+      "source": "/e-learning/",
+      "destination": "https://arbeitssicherheit.nrw/leistungen/schulungen",
+      "permanent": true
+    },
+    {
+      "source": "/branchen",
+      "destination": "https://arbeitssicherheit.nrw/leistungen/arbeitssicherheit",
+      "permanent": true
+    },
+    {
+      "source": "/branchen/",
+      "destination": "https://arbeitssicherheit.nrw/leistungen/arbeitssicherheit",
+      "permanent": true
+    },
+    {
+      "source": "/branchen/:slug",
+      "destination": "https://arbeitssicherheit.nrw/leistungen/arbeitssicherheit",
+      "permanent": true
+    },
+    {
+      "source": "/branchen/:slug/",
+      "destination": "https://arbeitssicherheit.nrw/leistungen/arbeitssicherheit",
+      "permanent": true
+    },
+    {
+      "source": "/blog/gefaehrdungsbeurteilung-pflicht-unternehmen",
+      "destination": "https://arbeitssicherheit.nrw/blog/gefaehrdungsbeurteilung-erstellen-schritt-fuer-schritt",
+      "permanent": true
+    },
+    {
+      "source": "/blog/gefaehrdungsbeurteilung-pflicht-unternehmen/",
+      "destination": "https://arbeitssicherheit.nrw/blog/gefaehrdungsbeurteilung-erstellen-schritt-fuer-schritt",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unterweisungspflicht-arbeitsschutz-koeln",
+      "destination": "https://arbeitssicherheit.nrw/blog/unterweisung-arbeitssicherheit-pflichtinhalte",
+      "permanent": true
+    },
+    {
+      "source": "/blog/unterweisungspflicht-arbeitsschutz-koeln/",
+      "destination": "https://arbeitssicherheit.nrw/blog/unterweisung-arbeitssicherheit-pflichtinhalte",
+      "permanent": true
+    },
+    {
+      "source": "/blog/externe-sifa-kosten-vorteile",
+      "destination": "https://arbeitssicherheit.nrw/blog/externe-fachkraft-arbeitssicherheit-koeln",
+      "permanent": true
+    },
+    {
+      "source": "/blog/externe-sifa-kosten-vorteile/",
+      "destination": "https://arbeitssicherheit.nrw/blog/externe-fachkraft-arbeitssicherheit-koeln",
+      "permanent": true
+    },
+    {
+      "source": "/blog/arbeitsschutz-handwerksbetrieb-koeln",
+      "destination": "https://arbeitssicherheit.nrw/leistungen/arbeitssicherheit",
+      "permanent": true
+    },
+    {
+      "source": "/blog/arbeitsschutz-handwerksbetrieb-koeln/",
+      "destination": "https://arbeitssicherheit.nrw/leistungen/arbeitssicherheit",
+      "permanent": true
+    },
+    {
+      "source": "/blog/arbeitssicherheit-buero-betriebe-koeln",
+      "destination": "https://arbeitssicherheit.nrw/leistungen/arbeitssicherheit",
+      "permanent": true
+    },
+    {
+      "source": "/blog/arbeitssicherheit-buero-betriebe-koeln/",
+      "destination": "https://arbeitssicherheit.nrw/leistungen/arbeitssicherheit",
+      "permanent": true
+    },
+    {
+      "source": "/blog/betriebsanweisungen-pflicht-inhalt-koeln",
+      "destination": "https://arbeitssicherheit.nrw/blog",
+      "permanent": true
+    },
+    {
+      "source": "/blog/betriebsanweisungen-pflicht-inhalt-koeln/",
+      "destination": "https://arbeitssicherheit.nrw/blog",
+      "permanent": true
+    },
+    {
+      "source": "/blog/sigeko-baustelle-koeln-rab-30",
+      "destination": "https://arbeitssicherheit.nrw/blog/sigeko-nrw-orientierung-bauherren",
+      "permanent": true
+    },
+    {
+      "source": "/blog/sigeko-baustelle-koeln-rab-30/",
+      "destination": "https://arbeitssicherheit.nrw/blog/sigeko-nrw-orientierung-bauherren",
+      "permanent": true
+    },
+    {
+      "source": "/blog/pruefung-berufsgenossenschaft-vorbereitung",
+      "destination": "https://arbeitssicherheit.nrw/blog/betriebsbegehung-was-wird-geprueft",
+      "permanent": true
+    },
+    {
+      "source": "/blog/pruefung-berufsgenossenschaft-vorbereitung/",
+      "destination": "https://arbeitssicherheit.nrw/blog/betriebsbegehung-was-wird-geprueft",
+      "permanent": true
+    },
+    {
+      "source": "/blog",
+      "destination": "https://arbeitssicherheit.nrw/blog",
+      "permanent": true
+    },
+    {
+      "source": "/blog/",
+      "destination": "https://arbeitssicherheit.nrw/blog",
+      "permanent": true
+    },
+    {
+      "source": "/feed.xml",
+      "destination": "https://arbeitssicherheit.nrw/blog",
+      "permanent": true
+    },
+    {
+      "source": "/kontakt",
+      "destination": "https://arbeitssicherheit.nrw/kontakt",
+      "permanent": true
+    },
+    {
+      "source": "/kontakt/",
+      "destination": "https://arbeitssicherheit.nrw/kontakt",
+      "permanent": true
+    },
+    {
+      "source": "/faq",
+      "destination": "https://arbeitssicherheit.nrw/faq",
+      "permanent": true
+    },
+    {
+      "source": "/faq/",
+      "destination": "https://arbeitssicherheit.nrw/faq",
+      "permanent": true
+    },
+    {
+      "source": "/ueber-uns",
+      "destination": "https://arbeitssicherheit.nrw/ueber-uns",
+      "permanent": true
+    },
+    {
+      "source": "/ueber-uns/",
+      "destination": "https://arbeitssicherheit.nrw/ueber-uns",
+      "permanent": true
+    },
+    {
+      "source": "/impressum",
+      "destination": "https://arbeitssicherheit.nrw/impressum",
+      "permanent": true
+    },
+    {
+      "source": "/impressum/",
+      "destination": "https://arbeitssicherheit.nrw/impressum",
+      "permanent": true
+    },
+    {
+      "source": "/datenschutz",
+      "destination": "https://arbeitssicherheit.nrw/datenschutz",
+      "permanent": true
+    },
+    {
+      "source": "/datenschutz/",
+      "destination": "https://arbeitssicherheit.nrw/datenschutz",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "destination": "https://arbeitssicherheit.nrw/",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "destination": "https://arbeitssicherheit.nrw/",
+      "permanent": true
+    }
+  ]
 }
